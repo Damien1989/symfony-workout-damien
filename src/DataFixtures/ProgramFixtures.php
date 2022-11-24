@@ -13,7 +13,7 @@ class ProgramFixtures extends Fixture
 
     {
         $program = new Program();
-        $program->setTitle('Walking dead');
+        $program->setTitle('Foot');
         $program->setSynopsis('Des zombies envahissent la terre');
         $program->setPoster('hello');
         $program->setCategory($this->getReference('category_Action'));
