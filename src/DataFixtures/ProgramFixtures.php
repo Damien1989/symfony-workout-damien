@@ -14,7 +14,9 @@ class ProgramFixtures extends Fixture
     {
         $program = new Program();
         $program->setTitle('Foot');
-        $program->setSynopsis('Des zombies envahissent la terre');
+        $program->setSynopsis('Des zombies envahissent la terre. La tradition juive relie leur ascendance aux patriarches Abraham, Isaac et Jacob également appelé Israël. 
+        Ils peuplent la Judée et le royaume d/Israël, structurant leur quotidien autour de la Bible hébraïque, laquelle comprend les cinq Livres de la Torah attribués à Moïse, 
+        les Livres des prophètes ultérieurs et d/autres écrits.  ');
         $program->setPoster('hello');
         $program->setCategory($this->getReference('category_Action'));
         $manager->persist($program);
@@ -25,7 +27,7 @@ class ProgramFixtures extends Fixture
             $program = new Program();
             $program->setTitle('Pikachu');
             $program->setSynopsis('Mouloud mange du porc');
-            $program->setPoster('https://www.pokepedia.fr/Fichier:Pikachu-DEPS.png');
+            $program->setPoster('Pikachu-DEPS.png');
             $program->setCategory($this->getReference('category_Action'));
             $manager->persist($program);
             $manager->flush();
@@ -40,12 +42,7 @@ class ProgramFixtures extends Fixture
             $manager->persist($program);
             $manager->flush();
         }
-
-
-
     }
-
-
 
     public function getDependencies()
     {
